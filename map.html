@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>My Map</title>
+	<style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+		width:100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+
+      function initMap() {
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 13,
+          center: {lat: 41.817, lng: -87.688}
+        });
+
+        var image = "heart2.png";
+        var beachMarker = new google.maps.Marker({
+          position: {lat: 41.835, lng: -87.674},
+          map: map,
+          icon: image
+        });
+		var image = "heart2.png";
+        var beachMarker = new google.maps.Marker({
+          position: {lat: 41.817, lng: -87.688},
+          map: map,
+          icon: image
+        });
+		
+		var image = "heart2.png";
+        var beachMarker = new google.maps.Marker({
+          position: {lat: 41.874846, lng: -87.656159},
+          map: map,
+          icon: image
+        });
+		var image = "heart2.png";
+        var beachMarker = new google.maps.Marker({
+          position: {lat: 41.849552, lng: -87.633847},
+          map: map,
+          icon: image
+        });
+		var image = "heart2.png";
+        var beachMarker = new google.maps.Marker({
+          position: {lat: 41.865243, lng: -87.675762},
+          map: map,
+          icon: image
+        });
+		var image = "heart2.png";
+        var beachMarker = new google.maps.Marker({
+          position: {lat: 41.829719, lng: -87.695755},
+          map: map,
+          icon: image
+        });
+		var image = "heart2.png";
+        var beachMarker = new google.maps.Marker({
+          position: {lat:41.815437, lng:-87.694253},
+          map: map,
+          icon: image
+        });
+		var image = "ga2.jpg";
+        var beachMarker = new google.maps.Marker({
+          position: {lat:47.606210, lng:-122.332071},
+          map: map,
+          icon: image
+        });
+      }
+    </script>
+    <script 
+	async defer
+    src="https://maps.googleapis.com/maps/api/js?AIzaSyBMycZWn5Rvn6KIdimKs7kw604DV0DMq6c&callback=initMap">
+    </script>
+  </body>
+</html>

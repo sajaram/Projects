@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<title>About Me!</title>
+<link rel="stylesheet" type="text/css" href="style1.css">
+
+<script>
+alert("Welcome to my page!");
+	function forward() {
+		var image = document.getElementById("friend")
+		if (image.src.match("friends1")) {
+		image.src= "friends2.jpg";
+		}
+		else {
+		image.src= "friends1.jpg";
+		}
+		}
+	</script>
+	<style> 
+	.flex-container {
+    display: -webkit-flex;
+    display: flex;  
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    text-align: center;
+}
+
+.flex-container > * {
+    padding: 15px;
+    -webkit-flex: 1 100%;
+    flex: 1 100%;
+}
+
+.article {
+    text-align: left;
+}
+
+header {background: black;color:grey;}
+</style>
+  </head>
+
+<body background="stars.gif">
+<center>
+<div class="flex-container">
+<header>
+  <h1>About Me!</h1>
+</header>
+</div>
+<img id="friend" src= "friends1.jpg" height= "250">
+<button id="btn" onclick= "forward()" > > </button>
+
+<h4> I live in Chicago, Illions. I have a twin sister, Dhamar, and an older sister, Maggie.<br> 
+I am 16 years old and I've never been out of the state, but I would love to go to Seattle one day.</h4>
+
+<iframe
+  width="700"
+  height="650"
+  frameborder="0" style="border:0"
+  src="map.html" allowfullscreen>
+</iframe>
+<br>
+<img src= "bandmember.jpg" height= "250">
+<img src= "bandmember1.jpg" height= "250">
+<img src= "bandmember2.jpg" height= "250">
+<h4> I love to listen to music! Some of my favorites are Grouplove, Bear Hands, Slow Caves, and Morning Teleportation.<br>
+I also love to go on the Internet. I joined a summer program to learn more about coding because I thought that it would be cool to build a website that people
+might want to use. I have learned Scratch, Python, C++, CSS, HTML, and JavaScript.</h4>
+
+<video width="840" height="620" controls>
+   <source src="TimmyGeorgeJr.mp4" type="video/mp4">
+</video> 
+</body>
+
+
+</html>
